@@ -12,8 +12,12 @@ from typing import Dict, List, Optional, Tuple, Any
 
 import joblib
 import numpy as np
-import pandas as pd
-import torch
+try:
+    import torch
+    HAS_TORCH = True
+except ImportError:
+    torch = None
+    HAS_TORCH = False
 
 from app.core.config import get_settings
 from app.ml.features.engineer import build_feature_matrix, TARGET_VARIABLES

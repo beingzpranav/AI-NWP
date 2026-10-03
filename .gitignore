@@ -19,12 +19,15 @@ env/
 ENV/
 .venv/
 
-# ML artifacts (large binary models ignored; metadata & summary JSONs tracked)
-artifacts/*.joblib
-artifacts/*.pt
+# ML artifacts (large binary models ignored across all folders; metadata & summary JSONs tracked)
+**/*.joblib
+**/*.pt
+**/*.pth
 !backend/artifacts/multi_city_summary.json
 !backend/artifacts/metadata.json
 !backend/artifacts/ablation_results.json
+!backend/artifacts/**/metadata.json
+!backend/artifacts/**/ablation_results.json
 *.pkl
 *.h5
 *.keras

@@ -14,21 +14,28 @@ HEAD 1 minimizes MSE (weather prediction).
 HEAD 2 predicts log-variance (heteroscedastic uncertainty).
 Combined loss: NLL (negative log-likelihood) of Gaussian.
 """
-import numpy as np
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.utils.data import DataLoader, TensorDataset
-from pathlib import Path
-from typing import List, Optional, Tuple
-from app.core.logging import get_logger
+try:
+    import torch
+    import torch.nn as nn
+    import torch.optim as optim
+    from torch.utils.data import DataLoader, TensorDataset
+    HAS_TORCH = True
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    nn_base = nn.Module
+except ImportError:
+    torch = None
+    nn = None
+    optim = None
+    DataLoader = None
+    TensorDataset = None
+    HAS_TORCH = False
+    DEVICE = "cpu"
+    nn_base = object
 
 logger = get_logger(__name__)
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
-class TwoHeadWeatherNet(nn.Module):
+class TwoHeadWeatherNet(nn_base):
     """
     Two-head ANN:
     - HEAD 1: Forecast (predicted weather values)
