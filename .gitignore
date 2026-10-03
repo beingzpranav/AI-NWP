@@ -1,0 +1,61 @@
+# Environment — NEVER commit real credentials
+.env
+*.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+venv/
+env/
+ENV/
+.venv/
+
+# ML artifacts (large binary models ignored; metadata & summary JSONs tracked)
+artifacts/*.joblib
+artifacts/*.pt
+!backend/artifacts/multi_city_summary.json
+!backend/artifacts/metadata.json
+!backend/artifacts/ablation_results.json
+*.pkl
+*.h5
+*.keras
+*.pt
+*.pth
+data/training/
+data/raw/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Database
+*.sqlite3
+*.db
+
+# Logs
+logs/
+*.log
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

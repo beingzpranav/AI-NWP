@@ -1,0 +1,12 @@
+import sys
+from pathlib import Path
+backend_dir = str(Path(__file__).parent.parent.parent / "backend")
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
+
+from app.ml.inference.engine import (
+    MLInferenceEngine,
+    get_ml_inference_engine,
+)
+
+__all__ = ["MLInferenceEngine", "get_ml_inference_engine"]

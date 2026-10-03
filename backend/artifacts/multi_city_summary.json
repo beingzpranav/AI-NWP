@@ -1,0 +1,142 @@
+[
+  {
+    "city": "Jaipur",
+    "samples": 8784,
+    "nwp_mae": 0.8332,
+    "rf_mae": 1.3221,
+    "xgb_mae": 1.0339,
+    "ann_mae": 1.1421,
+    "best_mae": 1.0339,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Bengaluru",
+    "samples": 8784,
+    "nwp_mae": 0.9357,
+    "rf_mae": 0.9726,
+    "xgb_mae": 0.8243,
+    "ann_mae": 0.9027,
+    "best_mae": 0.8243,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Hyderabad",
+    "samples": 8784,
+    "nwp_mae": 1.2277,
+    "rf_mae": 0.9526,
+    "xgb_mae": 1.042,
+    "ann_mae": 0.9854,
+    "best_mae": 0.9526,
+    "best_model": "RF"
+  },
+  {
+    "city": "Mumbai",
+    "samples": 8784,
+    "nwp_mae": 0.9439,
+    "rf_mae": 0.7061,
+    "xgb_mae": 0.6738,
+    "ann_mae": 0.6974,
+    "best_mae": 0.6738,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Chennai",
+    "samples": 8784,
+    "nwp_mae": 1.0251,
+    "rf_mae": 1.0534,
+    "xgb_mae": 0.9263,
+    "ann_mae": 1.1594,
+    "best_mae": 0.9263,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Delhi",
+    "samples": 8784,
+    "nwp_mae": 1.1855,
+    "rf_mae": 1.3624,
+    "xgb_mae": 1.2131,
+    "ann_mae": 1.4755,
+    "best_mae": 1.2131,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Kolkata",
+    "samples": 8784,
+    "nwp_mae": 0.8312,
+    "rf_mae": 0.9574,
+    "xgb_mae": 0.8749,
+    "ann_mae": 0.962,
+    "best_mae": 0.8749,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Pune",
+    "samples": 8784,
+    "nwp_mae": 0.4413,
+    "rf_mae": 0.6033,
+    "xgb_mae": 0.4898,
+    "ann_mae": 0.5591,
+    "best_mae": 0.4898,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Ahmedabad",
+    "samples": 8784,
+    "nwp_mae": 1.6079,
+    "rf_mae": 0.9563,
+    "xgb_mae": 0.8751,
+    "ann_mae": 0.9488,
+    "best_mae": 0.8751,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Lucknow",
+    "samples": 8784,
+    "nwp_mae": 0.7908,
+    "rf_mae": 1.739,
+    "xgb_mae": 1.2677,
+    "ann_mae": 1.4016,
+    "best_mae": 1.2677,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Chandigarh",
+    "samples": 8784,
+    "nwp_mae": 1.1241,
+    "rf_mae": 2.0982,
+    "xgb_mae": 1.5722,
+    "ann_mae": 2.1243,
+    "best_mae": 1.5722,
+    "best_model": "XGB"
+  },
+  {
+    "city": "Bhopal",
+    "samples": 8784,
+    "nwp_mae": 1.1333,
+    "rf_mae": 1.4201,
+    "xgb_mae": 1.7674,
+    "ann_mae": 1.3061,
+    "best_mae": 1.3061,
+    "best_model": "ANN"
+  },
+  {
+    "city": "Patna",
+    "samples": 8784,
+    "nwp_mae": 0.8761,
+    "rf_mae": 2.0551,
+    "xgb_mae": 2.082,
+    "ann_mae": 2.0102,
+    "best_mae": 2.0102,
+    "best_model": "ANN"
+  },
+  {
+    "city": "Kochi",
+    "samples": 8784,
+    "nwp_mae": 1.0747,
+    "rf_mae": 0.701,
+    "xgb_mae": 0.8168,
+    "ann_mae": 0.7544,
+    "best_mae": 0.701,
+    "best_model": "RF"
+  }
+]
