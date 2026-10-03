@@ -16,8 +16,9 @@ import type {
   AblationResult,
 } from '../types/weather';
 
-const apiBase = import.meta.env.VITE_API_URL
-  ? (import.meta.env.VITE_API_URL.endsWith('/api') ? import.meta.env.VITE_API_URL : `${import.meta.env.VITE_API_URL}/api`)
+const envUrl = import.meta.env.BACKEND_URL || import.meta.env.VITE_API_URL;
+const apiBase = envUrl
+  ? (envUrl.endsWith('/api') ? envUrl : `${envUrl}/api`)
   : '/api';
 
 const client = axios.create({
